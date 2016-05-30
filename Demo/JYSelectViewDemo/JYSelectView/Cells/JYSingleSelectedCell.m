@@ -29,7 +29,6 @@
     [super awakeFromNib];
 }
 
-
 - (void)setContentWithDic:(NSDictionary *)dic {
     self.title.text = dic[@"title"];
     self.index = dic[@"index"];

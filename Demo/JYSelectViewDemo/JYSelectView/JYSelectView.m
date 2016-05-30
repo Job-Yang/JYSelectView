@@ -67,7 +67,7 @@ NSString *const kJYMultipleSelectCell = @"JYMultipleSelectCell";
   self = [self initWithTitleArray:titleArray
                             style:style
                          animated:animated
-                completionHandler:nil];
+                completionHandler:^{}];
   return self;
 }
 
