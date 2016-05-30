@@ -43,7 +43,7 @@ NSString *const kJYMultipleSelectCell = @"JYMultipleSelectCell";
   self = [super init];
   if (self) {
     self.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-    self.backgroundColor = [UIColor colorWithRed:0.937 green:0.937 blue:0.937 alpha:1];
+    self.backgroundColor = [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:0.9];
     self.titleArray = titleArray;
     self.style = style;
     self.isAnimated = animated;
@@ -75,14 +75,14 @@ NSString *const kJYMultipleSelectCell = @"JYMultipleSelectCell";
 
 - (void)setupHeight {
   if (self.style == JYSingleSelect) {
-    self.collectionViewHeight = self.titleArray.count * JYSingleSelectCellHeight;
+    self.collectionViewHeight = self.titleArray.count * kSingleSelectCellHeight;
   }
   else {
-    if (self.titleArray.count % JYMultipleSelectCellNumber == 0) {
-      self.collectionViewHeight = self.titleArray.count/JYMultipleSelectCellNumber * JYMultipleSelectCellHeight;
+    if (self.titleArray.count % kMultipleSelectCellNumber == 0) {
+      self.collectionViewHeight = self.titleArray.count/kMultipleSelectCellNumber * kMultipleSelectCellHeight;
     }
     else {
-      self.collectionViewHeight = (self.titleArray.count/JYMultipleSelectCellNumber+1) * JYMultipleSelectCellHeight;
+      self.collectionViewHeight = (self.titleArray.count/kMultipleSelectCellNumber+1) * kMultipleSelectCellHeight;
     }
   }
   
@@ -120,13 +120,13 @@ NSString *const kJYMultipleSelectCell = @"JYMultipleSelectCell";
    */
   UICollectionViewFlowLayout* flowLayout = [[UICollectionViewFlowLayout alloc]init];
   if (self.style == JYSingleSelect) {
-    flowLayout.itemSize = CGSizeMake(self.selectView.frame.size.width, JYSingleSelectCellHeight<35 ? 35 : JYSingleSelectCellHeight);
+    flowLayout.itemSize = CGSizeMake(self.selectView.frame.size.width, kSingleSelectCellHeight<35 ? 35 : kSingleSelectCellHeight);
     flowLayout.minimumInteritemSpacing = 0;
     flowLayout.minimumLineSpacing = 0;
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
   }
   else {
-    flowLayout.itemSize = CGSizeMake(self.selectView.frame.size.width/JYMultipleSelectCellNumber, JYMultipleSelectCellHeight<20 ? 20 : JYMultipleSelectCellHeight);
+    flowLayout.itemSize = CGSizeMake(self.selectView.frame.size.width/kMultipleSelectCellNumber, kMultipleSelectCellHeight<20 ? 20 : kMultipleSelectCellHeight);
     flowLayout.minimumInteritemSpacing = 0;
     flowLayout.minimumLineSpacing = 0;
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];

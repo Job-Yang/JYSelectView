@@ -11,15 +11,15 @@
 /**
  *  单行选择--Cell行高（最小为35）
  */
-const CGFloat JYSingleSelectCellHeight = 40;
+static const CGFloat kSingleSelectCellHeight = 40;
 /**
  *  多行选择--Cell行高 (最小为20)
  */
-const CGFloat JYMultipleSelectCellHeight  = 30;
+static const CGFloat kMultipleSelectCellHeight  = 30;
 /**
  *  多行选择--每行Cell数量
  */
-const NSUInteger JYMultipleSelectCellNumber = 2;
+static const NSUInteger kMultipleSelectCellNumber = 2;
 
 @class JYSelectView;
 
