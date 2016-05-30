@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfh-G5-UVn">
+                                <rect key="frame" x="51" y="326" width="272" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="2xA-Xz-fKL"/>
+                                    <constraint firstAttribute="width" constant="272" id="iO6-u2-mzn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="JYMultipleSelect"/>
+                                <connections>
+                                    <action selector="JYMultipleSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qaX-2n-1CG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEZ-0P-dCw">
+                                <rect key="frame" x="51" y="189" width="272" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="272" id="NRL-Ba-pdz"/>
+                                    <constraint firstAttribute="height" constant="129" id="wDy-2y-Vyp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="JYSingleSelect"/>
+                                <connections>
+                                    <action selector="JYSingleSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xdO-Hx-U9c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bfh-G5-UVn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CUc-ub-SDc"/>
+                            <constraint firstItem="bfh-G5-UVn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="57" id="R6P-ty-kOC"/>
+                            <constraint firstItem="GEZ-0P-dCw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bYF-Co-ZND"/>
+                            <constraint firstItem="bfh-G5-UVn" firstAttribute="top" secondItem="GEZ-0P-dCw" secondAttribute="bottom" constant="8" id="ph2-AD-Pw6"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="339.5" y="429.5"/>
+        </scene>
+    </scenes>
+</document>

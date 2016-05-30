@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B15832301CFBDCFC00804168 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B158322F1CFBDCFC00804168 /* main.m */; };
+		B15832331CFBDCFC00804168 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B15832321CFBDCFC00804168 /* AppDelegate.m */; };
+		B15832361CFBDCFC00804168 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15832351CFBDCFC00804168 /* ViewController.m */; };
+		B15832391CFBDCFC00804168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15832371CFBDCFC00804168 /* Main.storyboard */; };
+		B158323B1CFBDCFC00804168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B158323A1CFBDCFC00804168 /* Assets.xcassets */; };
+		B158323E1CFBDCFC00804168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B158323C1CFBDCFC00804168 /* LaunchScreen.storyboard */; };
+		B158325F1CFBE63600804168 /* JYSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = B158325E1CFBE63600804168 /* JYSelectView.m */; };
+		B15832661CFBE64100804168 /* JYMultipleSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B15832611CFBE64100804168 /* JYMultipleSelectCell.m */; };
+		B15832671CFBE64100804168 /* JYMultipleSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15832621CFBE64100804168 /* JYMultipleSelectCell.xib */; };
+		B15832681CFBE64100804168 /* JYSingleSelectedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B15832641CFBE64100804168 /* JYSingleSelectedCell.m */; };
+		B15832691CFBE64100804168 /* JYSingleSelectedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15832651CFBE64100804168 /* JYSingleSelectedCell.xib */; };
+		B158326C1CFBE65000804168 /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = B158326B1CFBE65000804168 /* UIResponder+Router.m */; };
+		B158326F1CFBE65F00804168 /* JYSelectView_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B158326D1CFBE65F00804168 /* JYSelectView_normal@2x.png */; };
+		B15832701CFBE65F00804168 /* JYSelectView_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B158326E1CFBE65F00804168 /* JYSelectView_select@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B158322B1CFBDCFC00804168 /* JYSelectViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYSelectViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B158322F1CFBDCFC00804168 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B15832311CFBDCFC00804168 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B15832321CFBDCFC00804168 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B15832341CFBDCFC00804168 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B15832351CFBDCFC00804168 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B15832381CFBDCFC00804168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B158323A1CFBDCFC00804168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B158323D1CFBDCFC00804168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B158323F1CFBDCFC00804168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B158325D1CFBE63600804168 /* JYSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JYSelectView.h; path = JYSelectView/JYSelectView.h; sourceTree = "<group>"; };
+		B158325E1CFBE63600804168 /* JYSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JYSelectView.m; path = JYSelectView/JYSelectView.m; sourceTree = "<group>"; };
+		B15832601CFBE64100804168 /* JYMultipleSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JYMultipleSelectCell.h; path = JYSelectView/Cells/JYMultipleSelectCell.h; sourceTree = "<group>"; };
+		B15832611CFBE64100804168 /* JYMultipleSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JYMultipleSelectCell.m; path = JYSelectView/Cells/JYMultipleSelectCell.m; sourceTree = "<group>"; };
+		B15832621CFBE64100804168 /* JYMultipleSelectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JYMultipleSelectCell.xib; path = JYSelectView/Cells/JYMultipleSelectCell.xib; sourceTree = "<group>"; };
+		B15832631CFBE64100804168 /* JYSingleSelectedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JYSingleSelectedCell.h; path = JYSelectView/Cells/JYSingleSelectedCell.h; sourceTree = "<group>"; };
+		B15832641CFBE64100804168 /* JYSingleSelectedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JYSingleSelectedCell.m; path = JYSelectView/Cells/JYSingleSelectedCell.m; sourceTree = "<group>"; };
+		B15832651CFBE64100804168 /* JYSingleSelectedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JYSingleSelectedCell.xib; path = JYSelectView/Cells/JYSingleSelectedCell.xib; sourceTree = "<group>"; };
+		B158326A1CFBE65000804168 /* UIResponder+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIResponder+Router.h"; path = "JYSelectView/Categories/UIResponder+Router.h"; sourceTree = "<group>"; };
+		B158326B1CFBE65000804168 /* UIResponder+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIResponder+Router.m"; path = "JYSelectView/Categories/UIResponder+Router.m"; sourceTree = "<group>"; };
+		B158326D1CFBE65F00804168 /* JYSelectView_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "JYSelectView_normal@2x.png"; path = "JYSelectView/Images/JYSelectView_normal@2x.png"; sourceTree = "<group>"; };
+		B158326E1CFBE65F00804168 /* JYSelectView_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "JYSelectView_select@2x.png"; path = "JYSelectView/Images/JYSelectView_select@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B15832281CFBDCFC00804168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B15832221CFBDCFC00804168 = {
+			isa = PBXGroup;
+			children = (
+				B158322D1CFBDCFC00804168 /* JYSelectViewDemo */,
+				B158322C1CFBDCFC00804168 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B158322C1CFBDCFC00804168 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B158322B1CFBDCFC00804168 /* JYSelectViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B158322D1CFBDCFC00804168 /* JYSelectViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B15832451CFBDDE200804168 /* JYSelectView */,
+				B15832311CFBDCFC00804168 /* AppDelegate.h */,
+				B15832321CFBDCFC00804168 /* AppDelegate.m */,
+				B15832341CFBDCFC00804168 /* ViewController.h */,
+				B15832351CFBDCFC00804168 /* ViewController.m */,
+				B15832371CFBDCFC00804168 /* Main.storyboard */,
+				B158323A1CFBDCFC00804168 /* Assets.xcassets */,
+				B158323C1CFBDCFC00804168 /* LaunchScreen.storyboard */,
+				B158323F1CFBDCFC00804168 /* Info.plist */,
+				B158322E1CFBDCFC00804168 /* Supporting Files */,
+			);
+			path = JYSelectViewDemo;
+			sourceTree = "<group>";
+		};
+		B158322E1CFBDCFC00804168 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B158322F1CFBDCFC00804168 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B15832451CFBDDE200804168 /* JYSelectView */ = {
+			isa = PBXGroup;
+			children = (
+				B15832481CFBDE1300804168 /* Cells */,
+				B15832471CFBDE0700804168 /* Categories */,
+				B15832461CFBDDF900804168 /* Images */,
+				B158325D1CFBE63600804168 /* JYSelectView.h */,
+				B158325E1CFBE63600804168 /* JYSelectView.m */,
+			);
+			name = JYSelectView;
+			sourceTree = "<group>";
+		};
+		B15832461CFBDDF900804168 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B158326D1CFBE65F00804168 /* JYSelectView_normal@2x.png */,
+				B158326E1CFBE65F00804168 /* JYSelectView_select@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B15832471CFBDE0700804168 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B158326A1CFBE65000804168 /* UIResponder+Router.h */,
+				B158326B1CFBE65000804168 /* UIResponder+Router.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		B15832481CFBDE1300804168 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B15832601CFBE64100804168 /* JYMultipleSelectCell.h */,
+				B15832611CFBE64100804168 /* JYMultipleSelectCell.m */,
+				B15832621CFBE64100804168 /* JYMultipleSelectCell.xib */,
+				B15832631CFBE64100804168 /* JYSingleSelectedCell.h */,
+				B15832641CFBE64100804168 /* JYSingleSelectedCell.m */,
+				B15832651CFBE64100804168 /* JYSingleSelectedCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B158322A1CFBDCFC00804168 /* JYSelectViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B15832421CFBDCFC00804168 /* Build configuration list for PBXNativeTarget "JYSelectViewDemo" */;
+			buildPhases = (
+				B15832271CFBDCFC00804168 /* Sources */,
+				B15832281CFBDCFC00804168 /* Frameworks */,
+				B15832291CFBDCFC00804168 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JYSelectViewDemo;
+			productName = JYSelectViewDemo;
+			productReference = B158322B1CFBDCFC00804168 /* JYSelectViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B15832231CFBDCFC00804168 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Job-Yang";
+				TargetAttributes = {
+					B158322A1CFBDCFC00804168 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = B15832261CFBDCFC00804168 /* Build configuration list for PBXProject "JYSelectViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B15832221CFBDCFC00804168;
+			productRefGroup = B158322C1CFBDCFC00804168 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B158322A1CFBDCFC00804168 /* JYSelectViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B15832291CFBDCFC00804168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15832671CFBE64100804168 /* JYMultipleSelectCell.xib in Resources */,
+				B158323E1CFBDCFC00804168 /* LaunchScreen.storyboard in Resources */,
+				B158323B1CFBDCFC00804168 /* Assets.xcassets in Resources */,
+				B15832691CFBE64100804168 /* JYSingleSelectedCell.xib in Resources */,
+				B15832391CFBDCFC00804168 /* Main.storyboard in Resources */,
+				B15832701CFBE65F00804168 /* JYSelectView_select@2x.png in Resources */,
+				B158326F1CFBE65F00804168 /* JYSelectView_normal@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B15832271CFBDCFC00804168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15832661CFBE64100804168 /* JYMultipleSelectCell.m in Sources */,
+				B15832361CFBDCFC00804168 /* ViewController.m in Sources */,
+				B15832331CFBDCFC00804168 /* AppDelegate.m in Sources */,
+				B15832301CFBDCFC00804168 /* main.m in Sources */,
+				B158326C1CFBE65000804168 /* UIResponder+Router.m in Sources */,
+				B158325F1CFBE63600804168 /* JYSelectView.m in Sources */,
+				B15832681CFBE64100804168 /* JYSingleSelectedCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B15832371CFBDCFC00804168 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B15832381CFBDCFC00804168 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B158323C1CFBDCFC00804168 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B158323D1CFBDCFC00804168 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B15832401CFBDCFC00804168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B15832411CFBDCFC00804168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B15832431CFBDCFC00804168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JYSelectViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Job-Yang.JYSelectViewDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B15832441CFBDCFC00804168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JYSelectViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Job-Yang.JYSelectViewDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B15832261CFBDCFC00804168 /* Build configuration list for PBXProject "JYSelectViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15832401CFBDCFC00804168 /* Debug */,
+				B15832411CFBDCFC00804168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B15832421CFBDCFC00804168 /* Build configuration list for PBXNativeTarget "JYSelectViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15832431CFBDCFC00804168 /* Debug */,
+				B15832441CFBDCFC00804168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B15832231CFBDCFC00804168 /* Project object */;
+}
