@@ -21,6 +21,7 @@ JYSelectView *view = [[JYSelectView alloc]initWithTitleArray:arr
   [self.view addSubview:view];
 
 ```
+#### 单行选择效果图
 
 ![JYSelectView](https://github.com/Job-Yang/JYSelectView/blob/master/ScreenShots/JYSingleSelect.jpg)
 
@@ -43,5 +44,8 @@ JYSelectView *view = [[JYSelectView alloc]initWithTitleArray:arr
   [self.view addSubview:view];
 
 ```
+#### 多行选择效果图
 
 ![JYSelectView](https://github.com/Job-Yang/JYSelectView/blob/master/ScreenShots/JYMultipleSelect.jpg)
+
+#### 有任何问题可以直接issues,或者邮箱联系我。
