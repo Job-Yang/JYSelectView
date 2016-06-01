@@ -19,10 +19,6 @@
 JYSelectView *view = [[JYSelectView alloc]initWithTitleArray:arr
                                                        style:JYSingleSelect
                                                     animated:YES];
-view.hintInfo = @"点击您喜爱的几个选项：";
-view.hintInfoColor = [UIColor redColor];
-view.okButtonColor = [UIColor blueColor];
-view.cancelButtonColor = [UIColor redColor];
 [self.view addSubview:view];
 
 ```
@@ -31,7 +27,7 @@ view.cancelButtonColor = [UIColor redColor];
 ![JYSelectView](https://github.com/Job-Yang/JYSelectView/blob/master/ScreenShots/JYSingleSelect.jpg)
 
 
-#### 带Block的创建方法
+#### 带Block且自定义风格的创建方法
 
 ```objc
 //数据源
@@ -47,6 +43,10 @@ view.cancelButtonColor = [UIColor redColor];
                                              completionHandler:^{
                                                // 点击确定时执行
                                              }];
+  view.hintInfo = @"点击您喜爱的几个选项：";
+  view.hintInfoColor = [UIColor redColor];
+  view.okButtonColor = [UIColor blueColor];
+  view.cancelButtonColor = [UIColor redColor];
   [self.view addSubview:view];
 
 ```
