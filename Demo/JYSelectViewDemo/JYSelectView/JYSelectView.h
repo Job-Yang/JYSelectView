@@ -35,7 +35,23 @@ typedef NS_ENUM(NSInteger, JYChoiceStyle) {
 /**
  *  点选信息,在点击确定后赋值
  */
-@property (strong, nonatomic) NSArray *selectedArr;
+@property (strong, nonatomic) NSArray  *selectedArr;
+/**
+ *  提示语信息
+ */
+@property (copy,   nonatomic) NSString *hintInfo;
+/**
+ *  提示语颜色
+ */
+@property (strong, nonatomic) UIColor  *hintInfoColor;
+/**
+ *  确定按钮颜色
+ */
+@property (strong, nonatomic) UIColor  *okButtonColor;
+/**
+ *  取消按钮颜色
+ */
+@property (strong, nonatomic) UIColor  *cancelButtonColor;
 
 /**
  *  使用默认点击事件

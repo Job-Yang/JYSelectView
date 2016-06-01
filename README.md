@@ -19,7 +19,11 @@
 JYSelectView *view = [[JYSelectView alloc]initWithTitleArray:arr
                                                        style:JYSingleSelect
                                                     animated:YES];
-  [self.view addSubview:view];
+view.hintInfo = @"点击您喜爱的几个选项：";
+view.hintInfoColor = [UIColor redColor];
+view.okButtonColor = [UIColor blueColor];
+view.cancelButtonColor = [UIColor redColor];
+[self.view addSubview:view];
 
 ```
 #### 单行选择效果图

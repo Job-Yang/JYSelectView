@@ -20,8 +20,13 @@ NSString *const kJYMultipleSelectCell = @"JYMultipleSelectCell";
 
 @interface JYSelectView()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
+
 @property (strong, nonatomic) UICollectionView *collectionView;
 @property (strong, nonatomic) UIView *selectView;
+@property (strong, nonatomic) UILabel *tilteLabel;
+@property (strong, nonatomic) UIButton *cancelButton;
+@property (strong, nonatomic) UIButton *okButton;
+
 @property (assign, nonatomic) CGFloat collectionViewHeight;
 @property (strong, nonatomic) NSArray *titleArray;
 @property (assign, nonatomic) JYChoiceStyle style;
@@ -71,6 +76,28 @@ NSString *const kJYMultipleSelectCell = @"JYMultipleSelectCell";
   return self;
 }
 
+#pragma mark - set methods
+
+- (void)setHintInfo:(NSString *)hintInfo {
+  _hintInfo = hintInfo;
+  [self.tilteLabel setText:hintInfo];
+}
+
+- (void)setHintInfoColor:(UIColor *)hintInfoColor {
+  _hintInfoColor = hintInfoColor;
+  [self.tilteLabel setTextColor:hintInfoColor];
+}
+
+- (void)setOkButtonColor:(UIColor *)okButtonColor {
+  _okButtonColor = okButtonColor;
+  [self.okButton setTitleColor:okButtonColor forState:UIControlStateNormal];
+}
+
+- (void)setCancelButtonColor:(UIColor *)cancelButtonColor {
+  _cancelButtonColor = cancelButtonColor;
+  [self.cancelButton setTitleColor:cancelButtonColor forState:UIControlStateNormal];
+}
+
 #pragma mark - setup methods
 
 - (void)setupHeight {
@@ -104,17 +131,17 @@ NSString *const kJYMultipleSelectCell = @"JYMultipleSelectCell";
   /**
    标题Label
    */
-  UILabel *tilteLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.selectView.frame.size.width, 50)];
-  tilteLabel.text = @"请选择:";
-  tilteLabel.font = [UIFont boldSystemFontOfSize:18.f];
-  tilteLabel.textAlignment = NSTextAlignmentCenter;
-  [self.selectView addSubview:tilteLabel];
+  self.tilteLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.selectView.frame.size.width, 50)];
+  self.tilteLabel.text = @"请选择:";
+  self.tilteLabel.font = [UIFont boldSystemFontOfSize:18.f];
+  self.tilteLabel.textAlignment = NSTextAlignmentCenter;
+  [self.selectView addSubview:self.tilteLabel];
   /**
    横线
    */
-  UILabel *horizontal1 = [[UILabel alloc]initWithFrame:CGRectMake(0 , tilteLabel.frame.size.height-1, self.selectView.frame.size.width, 0.5)];
+  UILabel *horizontal1 = [[UILabel alloc]initWithFrame:CGRectMake(0 , self.tilteLabel.frame.size.height-1, self.selectView.frame.size.width, 0.5)];
   horizontal1.backgroundColor = [UIColor grayColor];
-  [tilteLabel addSubview:horizontal1];
+  [self.tilteLabel addSubview:horizontal1];
   /**
    *  collectionView
    */
@@ -143,29 +170,29 @@ NSString *const kJYMultipleSelectCell = @"JYMultipleSelectCell";
   /**
    取消Button
    */
-  UIButton *cancelButton = [[UIButton alloc]initWithFrame:CGRectMake(0, self.selectView.frame.size.height-50, self.selectView.frame.size.width/2-1, 50)];
-  [cancelButton setTitle:@"取消" forState:UIControlStateNormal];
-  [cancelButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-  [cancelButton addTarget:self action:@selector(cancelButtonAction) forControlEvents:UIControlEventTouchDown];
-  [self.selectView addSubview:cancelButton];
+  self.cancelButton = [[UIButton alloc]initWithFrame:CGRectMake(0, self.selectView.frame.size.height-50, self.selectView.frame.size.width/2-1, 50)];
+  [self.cancelButton setTitle:@"取消" forState:UIControlStateNormal];
+  [self.cancelButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+  [self.cancelButton addTarget:self action:@selector(cancelButtonAction) forControlEvents:UIControlEventTouchDown];
+  [self.selectView addSubview:self.cancelButton];
   /**
    确定Button
    */
-  UIButton *okButton = [[UIButton alloc]initWithFrame:CGRectMake(self.selectView.frame.size.width/2+1, self.selectView.frame.size.height-50, self.selectView.frame.size.width/2-1, 50)];
-  [okButton setTitle:@"确定" forState:UIControlStateNormal];
-  [okButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-  [okButton addTarget:self action:@selector(okButtonAction:) forControlEvents:UIControlEventTouchDown];
-  [self.selectView addSubview:okButton];
+  self.okButton = [[UIButton alloc]initWithFrame:CGRectMake(self.selectView.frame.size.width/2+1, self.selectView.frame.size.height-50, self.selectView.frame.size.width/2-1, 50)];
+  [self.okButton setTitle:@"确定" forState:UIControlStateNormal];
+  [self.okButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+  [self.okButton addTarget:self action:@selector(okButtonAction:) forControlEvents:UIControlEventTouchDown];
+  [self.selectView addSubview:self.okButton];
   /**
    竖线
    */
-  UILabel *verticalline = [[UILabel alloc]initWithFrame:CGRectMake(cancelButton.frame.size.width, cancelButton.frame.origin.y, 0.5, cancelButton.frame.size.height)];
+  UILabel *verticalline = [[UILabel alloc]initWithFrame:CGRectMake(self.cancelButton.frame.size.width, self.cancelButton.frame.origin.y, 0.5, self.cancelButton.frame.size.height)];
   verticalline.backgroundColor = [UIColor grayColor];
   [self.selectView addSubview:verticalline];
   /**
    横线
    */
-  UILabel *horizontal2 = [[UILabel alloc]initWithFrame:CGRectMake(0 , cancelButton.frame.origin.y-1, self.selectView.frame.size.width, 0.5)];
+  UILabel *horizontal2 = [[UILabel alloc]initWithFrame:CGRectMake(0 , self.cancelButton.frame.origin.y-1, self.selectView.frame.size.width, 0.5)];
   horizontal2.backgroundColor = [UIColor grayColor];
   [self.selectView addSubview:horizontal2];
   
