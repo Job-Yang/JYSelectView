@@ -11,15 +11,15 @@
 /**
  *  单行选择--Cell行高（最小为35）
  */
-const CGFloat JYSingleSelectCellHeight = 40;
+static const CGFloat kSingleSelectCellHeight = 40;
 /**
  *  多行选择--Cell行高 (最小为20)
  */
-const CGFloat JYMultipleSelectCellHeight  = 30;
+static const CGFloat kMultipleSelectCellHeight  = 30;
 /**
  *  多行选择--每行Cell数量
  */
-const NSUInteger JYMultipleSelectCellNumber = 2;
+static const NSUInteger kMultipleSelectCellNumber = 2;
 
 @class JYSelectView;
 
@@ -35,7 +35,23 @@ typedef NS_ENUM(NSInteger, JYChoiceStyle) {
 /**
  *  点选信息,在点击确定后赋值
  */
-@property (strong, nonatomic) NSArray *selectedArr;
+@property (strong, nonatomic) NSArray  *selectedArr;
+/**
+ *  提示语信息
+ */
+@property (copy,   nonatomic) NSString *hintInfo;
+/**
+ *  提示语颜色
+ */
+@property (strong, nonatomic) UIColor  *hintInfoColor;
+/**
+ *  确定按钮颜色
+ */
+@property (strong, nonatomic) UIColor  *okButtonColor;
+/**
+ *  取消按钮颜色
+ */
+@property (strong, nonatomic) UIColor  *cancelButtonColor;
 
 /**
  *  使用默认点击事件

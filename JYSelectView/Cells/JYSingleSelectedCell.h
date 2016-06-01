@@ -10,6 +10,9 @@
 
 @interface JYSingleSelectedCell : UICollectionViewCell
 
+/**
+ *  设置内容
+ */
 - (void)setContentWithDic:(NSDictionary *)dic;
 
 @end
