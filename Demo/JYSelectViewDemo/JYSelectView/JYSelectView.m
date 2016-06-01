@@ -15,8 +15,8 @@
 //屏幕高度
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
-NSString *const kJYSingleSelectCell   = @"JYSingleSelectedCell";
-NSString *const kJYMultipleSelectCell = @"JYMultipleSelectCell";
+static NSString *const kJYSingleSelectCell   = @"JYSingleSelectedCell";
+static NSString *const kJYMultipleSelectCell = @"JYMultipleSelectCell";
 
 @interface JYSelectView()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
